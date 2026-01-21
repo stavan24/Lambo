@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car Race Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- ROAD -->
+    <div class="road"></div>
+
+    <!-- SCORE & PAUSE -->
+    <div id="score">SCORE: 0</div>
+    <div id="pauseButton">PAUSE</div>
+
+    <!-- START SCREEN -->
+    <div class="start-screen">
+      <h1>Car Race Game</h1>
+      <p>Move your car and avoid traffic!</p>
+      <button id="startButton">START GAME</button>
+    </div>
+
+    <!-- GAME OVER SCREEN -->
+    <div class="game-over-screen" style="display:none;">
+      <h1>GAME OVER!</h1>
+      <p>Your Score: <span id="finalScore">0</span></p>
+      <button id="restartButton">PLAY AGAIN</button>
+    </div>
+
+    <!-- PAUSE SCREEN -->
+    <div class="pause-screen" style="display:none;">
+      <h1>PAUSED</h1>
+      <p>Press 'Esc' or click resume.</p>
+      <button id="resumeButton">RESUME</button>
+    </div>
+
+    <!-- MOBILE CONTROLS (HIDDEN BY DEFAULT, SHOW AFTER START) -->
+    <div class="mobile-controls" style="display:none;">
+      <div class="row">
+        <button id="btnUp" class="control-btn">↑</button>
+      </div>
+      <div class="row">
+        <button id="btnLeft" class="control-btn">←</button>
+        <button id="btnDown" class="control-btn">↓</button>
+        <button id="btnRight" class="control-btn">→</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
